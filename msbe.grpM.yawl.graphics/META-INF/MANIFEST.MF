@@ -8,7 +8,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  msbe.grpM.yawlpntd;bundle-version="0.1.0",
  org.pnml.tools.epnk.diagram;bundle-version="1.0.0",
- org.eclipse.swt;bundle-version="3.103.2"
+ org.eclipse.swt;bundle-version="3.103.2",
+ org.eclipse.draw2d
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: org.pnml.tools.epnk.pntypes.signalnets

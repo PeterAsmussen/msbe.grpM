@@ -6,10 +6,14 @@ import java.util.List;
 import org.eclipse.emf.ecore.EClass;
 import org.pnml.tools.epnk.gmf.extensions.graphics.GraphicalExtension;
 import org.pnml.tools.epnk.gmf.extensions.graphics.IArcFigure;
+import org.pnml.tools.epnk.gmf.extensions.graphics.IUpdateableFigure;
 import org.pnml.tools.epnk.pnmlcoremodel.Arc;
+import org.pnml.tools.epnk.pnmlcoremodel.Place;
+
 
 import msbe.grpM.yawlpntd.yawlnet.YawlnetPackage;
 import msbe.grpm.yawl.graphics.figures.YAWLArcs;
+import msbe.grpm.yawl.graphics.figures.YAWLPlaces;
 
 public class YAWLGraphics extends GraphicalExtension {
 
@@ -38,6 +42,15 @@ public class YAWLGraphics extends GraphicalExtension {
 		}
 		return null;
 	}
+	
+	@Override
+	public IUpdateableFigure createPlaceFigure(Place place) {
+		if (place instanceof msbe.grpM.yawlpntd.yawlnet.Place) {
+			return new YAWLPlaces((msbe.grpM.yawlpntd.yawlnet.Place) place);
+		}
+		return null;
+	}
+	
 }
 //test
 
