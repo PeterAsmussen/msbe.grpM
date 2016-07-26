@@ -38,7 +38,6 @@ public class YAWLGraphics extends GraphicalExtension {
 		}
 		return null;
 	}
-
-	
-	}
+}
+//test
 
