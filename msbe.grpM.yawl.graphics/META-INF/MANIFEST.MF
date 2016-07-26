@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Graphics
+Bundle-SymbolicName: msbe.grpM.yawl.graphics;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: msbe.grpm.yawl.graphics.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ msbe.grpM.yawlpntd;bundle-version="0.1.0",
+ org.pnml.tools.epnk.diagram;bundle-version="1.0.0",
+ org.eclipse.swt;bundle-version="3.103.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: org.pnml.tools.epnk.pntypes.signalnets

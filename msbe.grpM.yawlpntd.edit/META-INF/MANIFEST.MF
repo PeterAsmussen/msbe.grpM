@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: msbe.grpM.yawlpntd.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: msbe.grpM.yawlpntd.yawlnet.provider.YawlnetEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: msbe.grpM.yawlpntd.yawlnet.provider
+Require-Bundle: org.eclipse.core.runtime,
+ msbe.grpM.yawlpntd;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.pnml.tools.epnk;visibility:=reexport,
+ org.pnml.tools.epnk.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

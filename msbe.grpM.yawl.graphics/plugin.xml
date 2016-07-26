@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+			id="mbse.grpM.yawl.graphics"
+			name="Yawl Graphics"
+			point="org.pnml.tools.epnk.diagram.graphics">
+		<graphicsextension
+			class="msbe.grpm.yawl.graphics.YAWLGraphics">
+		</graphicsextension>
+	</extension>
+
+</plugin>
