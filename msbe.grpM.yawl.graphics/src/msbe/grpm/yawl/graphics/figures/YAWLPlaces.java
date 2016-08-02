@@ -16,8 +16,8 @@ public class YAWLPlaces extends PlaceFigure{
 	protected void fillShape(Graphics graphics) {
 		super.fillShape(graphics);
 		
-		if (((msbe.grpM.yawlpntd.yawlnet.Place) super.place).getType() != null){
-			if(((msbe.grpM.yawlpntd.yawlnet.Place)super.place).getType().getText().getValue() == 1){
+		if (((yawlnet.Place) super.place).getType() != null){
+			if(((yawlnet.Place)super.place).getType().getText().getValue() == 1){
 				Rectangle rect = this.getClientArea();
 				int py = rect.y + rect.height/4;
 				int px = rect.x + rect.width/4;

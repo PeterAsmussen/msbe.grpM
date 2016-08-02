@@ -11,7 +11,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.Arc;
 import org.pnml.tools.epnk.pnmlcoremodel.Place;
 
 
-import msbe.grpM.yawlpntd.yawlnet.YawlnetPackage;
+import yawlnet.YawlnetPackage;
 import msbe.grpm.yawl.graphics.figures.YAWLArcs;
 import msbe.grpm.yawl.graphics.figures.YAWLPlaces;
 
@@ -37,16 +37,16 @@ public class YAWLGraphics extends GraphicalExtension {
 
 	@Override
 	public IArcFigure createArcFigure(Arc arc) {
-		if (arc instanceof msbe.grpM.yawlpntd.yawlnet.Arc){
-			return new YAWLArcs((msbe.grpM.yawlpntd.yawlnet.Arc) arc);	
+		if (arc instanceof yawlnet.Arc){
+			return new YAWLArcs((yawlnet.Arc) arc);	
 		}
 		return null;
 	}
 	
 	@Override
 	public IUpdateableFigure createPlaceFigure(Place place) {
-		if (place instanceof msbe.grpM.yawlpntd.yawlnet.Place) {
-			return new YAWLPlaces((msbe.grpM.yawlpntd.yawlnet.Place) place);
+		if (place instanceof yawlnet.Place) {
+			return new YAWLPlaces((yawlnet.Place) place);
 		}
 		return null;
 	}

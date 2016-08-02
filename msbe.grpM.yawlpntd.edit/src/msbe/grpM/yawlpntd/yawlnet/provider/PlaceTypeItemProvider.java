@@ -6,9 +6,9 @@ package msbe.grpM.yawlpntd.yawlnet.provider;
 import java.util.Collection;
 import java.util.List;
 
-import msbe.grpM.yawlpntd.yawlnet.PType;
-import msbe.grpM.yawlpntd.yawlnet.PlaceType;
-import msbe.grpM.yawlpntd.yawlnet.YawlnetPackage;
+import yawlnet.PType;
+import yawlnet.PlaceType;
+import yawlnet.YawlnetPackage;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;

@@ -3,9 +3,9 @@ package msbe.grpm.yawl.graphics.figures;
 import org.eclipse.swt.SWT;
 import org.pnml.tools.epnk.gmf.extensions.graphics.figures.ArcFigure;
 
-import msbe.grpM.yawlpntd.yawlnet.AType;
-import msbe.grpM.yawlpntd.yawlnet.Arc;
-import msbe.grpM.yawlpntd.yawlnet.ArcType;
+import yawlnet.AType;
+import yawlnet.Arc;
+import yawlnet.ArcType;
 
 
 

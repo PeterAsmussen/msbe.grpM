@@ -4,6 +4,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Place">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//PlaceType"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tokens" eType="#//Token"
+        eOpposite="#//Token/place"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//Transition">
     <eStructuralFeatures xsi:type="ecore:EReference" name="join" eType="#//ControlType"
@@ -37,5 +39,15 @@
   <eClassifiers xsi:type="ecore:EEnum" name="AType">
     <eLiterals name="NORMAL"/>
     <eLiterals name="RESET" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="petrinet" eType="ecore:EClass ../../org.pnml.tools.epnk/model/PNMLCoreModel.ecore#//PetriNet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//Arc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//Arc"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Token">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="place" eType="#//Place"
+        eOpposite="#//Place/tokens"/>
   </eClassifiers>
 </ecore:EPackage>

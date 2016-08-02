@@ -7,11 +7,13 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: msbe.grpM.yawlpntd.yawlnet,
- msbe.grpM.yawlpntd.yawlnet.impl,
- msbe.grpM.yawlpntd.yawlnet.util
+ yawlnet,
+ yawlnet.impl,
+ yawlnet.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.pnml.tools.epnk;visibility:=reexport,
  org.eclipse.emf.validation;bundle-version="1.8.0"
 Bundle-ActivationPolicy: lazy
+Export-Package: yawlnet,
+ yawlnet.util

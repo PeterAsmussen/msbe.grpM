@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated annotations -->
+      <package
+            uri="http://annotations.ecore"
+            class="Annotations.AnnotationsPackage"
+            genModel="model/annotations.genmodel"/>
+   </extension>
+   <extension
+         id="id1"
+         name="name"
+         point="org.pnml.tools.epnk.applications.applicationfactory">
+      <applicationfactory
+            class="msbe.grpm.yawl.simulator.ApplicationFactory:1">
+      </applicationfactory>
+   </extension>
+
+</plugin>

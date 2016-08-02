@@ -6,8 +6,7 @@
     usedGenPackages="../../org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel"
     importOrganizing="true">
   <foreignModel>yawlnet.ecore</foreignModel>
-  <genPackages prefix="Yawlnet" basePackage="msbe.grpM.yawlpntd" disposableProviderFactory="true"
-      ecorePackage="yawlnet.ecore#/">
+  <genPackages prefix="Yawlnet" disposableProviderFactory="true" ecorePackage="yawlnet.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="yawlnet.ecore#//PType">
       <genEnumLiterals ecoreEnumLiteral="yawlnet.ecore#//PType/START"/>
       <genEnumLiterals ecoreEnumLiteral="yawlnet.ecore#//PType/END"/>
@@ -23,6 +22,7 @@
     </genEnums>
     <genClasses ecoreClass="yawlnet.ecore#//Place">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Place/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Place/tokens"/>
     </genClasses>
     <genClasses ecoreClass="yawlnet.ecore#//Transition">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Transition/join"/>
@@ -40,6 +40,15 @@
     </genClasses>
     <genClasses ecoreClass="yawlnet.ecore#//ArcType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute yawlnet.ecore#//ArcType/text"/>
+    </genClasses>
+    <genClasses ecoreClass="yawlnet.ecore#//Node">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Node/petrinet"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Node/in"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Node/out"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute yawlnet.ecore#//Node/name"/>
+    </genClasses>
+    <genClasses ecoreClass="yawlnet.ecore#//Token">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference yawlnet.ecore#//Token/place"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

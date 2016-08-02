@@ -5,13 +5,6 @@
 -->
 
 <plugin>
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated yawlnet -->
-      <package
-            uri="http://yawlnet.ecore"
-            class="msbe.grpM.yawlpntd.yawlnet.YawlnetPackage"
-            genModel="model/yawlnet.genmodel"/>
-   </extension>
 	<extension
    id="msbe.grpM.yawl"
    name="grpM.yawl"
@@ -115,4 +108,12 @@
    
 
 	
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated yawlnet -->
+      <package
+            uri="http://yawlnet.ecore"
+            class="yawlnet.YawlnetPackage"
+            genModel="model/yawlnet.genmodel"/>
+   </extension>
+
 </plugin>
